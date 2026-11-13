@@ -1,0 +1,21 @@
+name: Dota2MoldDraft
+options:
+  bundleIdPrefix: com.molddraft
+targets:
+  Dota2MoldDraft:
+    type: application
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: Sources
+      - path: Resources/Assets.xcassets
+      - path: Resources/WebApp
+        type: folder
+    info:
+      path: Resources/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.molddraft.dota2
+        CODE_SIGNING_ALLOWED: "NO"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGN_IDENTITY: ""
