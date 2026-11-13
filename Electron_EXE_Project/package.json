@@ -1,0 +1,26 @@
+{
+  "name": "dota2-mold-draft",
+  "productName": "DOTA 2 MOLD DRAFT",
+  "version": "2.5.0",
+  "description": "DOTA 2 MOLD DRAFT — EVA-01 Edition Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.molddraft.dota2",
+    "productName": "DOTA 2 MOLD DRAFT",
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico"
+    },
+    "portable": {
+      "artifactName": "Dota2_Mold_Draft_Windows.exe"
+    }
+  }
+}
